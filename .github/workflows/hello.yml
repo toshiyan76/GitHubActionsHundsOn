@@ -1,0 +1,9 @@
+name: Hello # ワークフローの名前
+on: push # このワークフローはpushイベントでトリガーされる
+
+jobs: # ジョブの定義
+  hello: # ジョブID
+    runs-on: ubuntu-latest # ジョブを実行する環境
+    steps: # ステップの定義
+        - run: echo "Hello world" # ステップで実行するコマンド
+        - uses: actions/checkout@v4 # ステップで使用するアクション
