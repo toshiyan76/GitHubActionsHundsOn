@@ -3,8 +3,8 @@ package main
 
 func EvenOrOdd(num int) string {
 	if num%2 == 0 {
-		return "偶数"
+		return "偶数だよ"
 	} else {
-		return "奇数"
+		return "奇数だよ"
 	}
 }
