@@ -1,0 +1,14 @@
+# テストワークフロー
+name: Test
+on:
+  pull_request: # プルリクエストが作成されたときに実行
+    paths: ['go/**/*.go'] # ワークフローを実行するファイルのパスを指定
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 # リポジトリのチェックアウト
+      - uses: actions/setup-go@v5 # Goのバージョンを指定
+        with:
+          go-version: 1.20
+      - run: go test go/excellent/*.go # テストを実行
