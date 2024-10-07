@@ -1,0 +1,7 @@
+version: 2 # バージョンを指定
+updates:
+  - package-ecosystem: github-actions # パッケージエコシステムを指定
+    directory: / # ディレクトリを指定
+    schedule:
+      interval: daily # スケジュールを指定
+      
