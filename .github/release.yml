@@ -1,0 +1,9 @@
+changelog:
+  categories:
+    - title: '🚀 Enhancement'
+      labels:
+        - 'enhancement'
+    - title: '🐛 Bug Fix'
+      labels:
+        - 'bug'
+        - 'fixes'

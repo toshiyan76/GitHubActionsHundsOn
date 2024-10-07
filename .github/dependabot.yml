@@ -4,4 +4,13 @@ updates:
     directory: / # ディレクトリを指定
     schedule:
       interval: daily # スケジュールを指定
-      
+    ignore:
+      - dependency-name: actions/upload-artifact
+        versions:
+          - 4.3.0
+          - 4.3.1
+      - dependency-name: 'actions/*'
+        update-types:
+          - version-update:semver-major
+      - schedule:
+          interval: weekly
